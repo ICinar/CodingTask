@@ -14,6 +14,6 @@ void mergeFunction(vector <Intervall> vect);
 
 int partition(vector<Intervall> &v, int left, int right);
 
-vector<Intervall> sort(vector<Intervall> &v, int left, int right);
+vector<Intervall> sortieren(vector<Intervall> &v, int left, int right);
 
 void printIntervall(vector<Intervall> temp);
