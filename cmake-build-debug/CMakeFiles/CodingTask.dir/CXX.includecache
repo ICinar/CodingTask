@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ibo/CLionProjects/CodingTask/merge.cpp
+merge.h
+C:/Users/Ibo/CLionProjects/CodingTask/merge.h
+
+C:/Users/Ibo/CLionProjects/CodingTask/merge.h
+iostream
+-
+vector
+-
+
