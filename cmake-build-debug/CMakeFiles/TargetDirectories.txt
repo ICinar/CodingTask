@@ -1,3 +1,0 @@
-C:/Users/Ibo/CLionProjects/CodingTask/cmake-build-debug/CMakeFiles/CodingTask.dir
-C:/Users/Ibo/CLionProjects/CodingTask/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ibo/CLionProjects/CodingTask/cmake-build-debug/CMakeFiles/rebuild_cache.dir
