@@ -7,7 +7,7 @@
 
 //Hauptfunktion
 int main() {
-    try {
+
     // Liste der Intervalle
     vector<Intervall> input
     {
@@ -35,9 +35,7 @@ int main() {
     test3();
     test4();
 
-    } catch (int e){
-        cout << "Fehler in Programm: " << e << '\n';
-    }
+
 
     return 0;
 }
