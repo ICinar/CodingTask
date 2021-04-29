@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Maximale Größe einer Liste
+#define MAX_VECTOR_SIZE     = 10000
 
 // stellt die Struktur eines Intervalls dar mit Start- und Endwert
 struct Intervall

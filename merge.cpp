@@ -1,7 +1,7 @@
 #include "merge.h"
+#include <exception>
 
-
-
+const int stackSize = 10000;
 /**
  * Funktion für die Ermittlung der Merge und Consolenausgabe als Ergebnis
  *
@@ -9,7 +9,9 @@
  */
 vector<Intervall> mergeFunction(vector <Intervall> vect) {
 
-
+    if (vect.size() > stackSize) {
+        throw std::runtime_error("Error");
+    }
     // 1.Schritt Sortiere alle Startintervalle nach Reihenfolge
     vect = sortieren(vect,0,vect.size()-1);
 
@@ -50,33 +52,35 @@ vector<Intervall> mergeFunction(vector <Intervall> vect) {
  * @return i gibt die Position der Pivotelement zurück
  */
 int partition(vector<Intervall> &v, int left, int right) {
-    Intervall pivot = v[right];
-
-    int i = left;
-    int j = right -1;
-
-    while ( i < j) {
-
-        while (i < right && v[i].anfang < pivot.anfang) {
-            i++;
-        }
+         int i = left;
+         int j = right - 1;
+         Intervall pivot = v[right];
 
 
-        while(j > left && v[j].anfang>= pivot.anfang) {
-            j--;
-        }
+         while (i < j) {
 
-        if (i < j) {
-            swap(v[i], v[j]);
-            i++;
-            j--;
-        }
-    }
+             while (i < right && v[i].anfang < pivot.anfang) {
+                 i++;
+             }
 
-    if (v[i].anfang > pivot.anfang) {
-        swap(v[i], v[right]);
-    }
-    return i;
+             while (j > left && v[j].anfang >= pivot.anfang) {
+                 j--;
+             }
+
+             if (i < j) {
+                 swap(v[i], v[j]);
+                 i++;
+                 j--;
+             }
+         }
+
+         if (v[i].anfang > pivot.anfang) {
+             swap(v[i], v[right]);
+         }
+
+
+         return i;
+
 
 
 }
@@ -90,9 +94,9 @@ int partition(vector<Intervall> &v, int left, int right) {
  */
 vector<Intervall> sortieren(vector<Intervall> &v, int left, int right) {
     if (left < right) {
-        int pivot = partition(v,left,right);
-        sortieren(v,left, pivot-1);
-        sortieren(v,pivot+1,right);
+        int pivot = partition(v, left, right);
+        sortieren(v, left, pivot - 1);
+        sortieren(v, pivot + 1, right);
     }
     return v;
 }

@@ -7,7 +7,7 @@
 
 //Hauptfunktion
 int main() {
-
+    /*
     // Liste der Intervalle
     vector<Intervall> input
     {
@@ -33,6 +33,7 @@ int main() {
     test1();
     test2();
     test3();
+     */
     test4();
 
 
