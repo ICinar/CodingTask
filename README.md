@@ -26,7 +26,7 @@ Weitere Infos siehe Kommentare in Code
 # Ausführung
 Ausgeführt unter Arch Linux mit Linux Kernel Version 5.11.13. Mit gcc Compiler ausgeführt.
 Unter Windows wird Cygwin und deren Bibliotheken (g++, gcc und make) verwendet.
-
+Cygwin Download:  https://cygwin.com/setup-x86_64.exe
 ### 1.Makefile ausführen
 Um ein ausführbahren Datei zu erstellen:
 ``` 
@@ -47,7 +47,7 @@ Hier werden Testfälle definiert, um die Korrektheit und Zuverlässigkeit der Fu
 * 1. Fall: Intervalle mitden gleiche Startwert Bepsiel: [12,24] [25,96] [25,33] [1,2] [3,4]. Erwartung: [1,2] [3,4] [12,24] [25,96]
 * 2. Fall: Reheinfolge von Intervall vertauscht Beispiel [26,24] Erwartung: Eine Fehlermeldung für die Falsche Eingabe der Intervall. (Alternativ: Programm tauscht die Intervallgrenzwerte aus)
 * 3. Fall: Ausführung von großen Zahlen d.h. Intervallgrenzwerte haben sehr hohen Wert und diese Code soll es verarbeiten können
-* 4. Fall: Mehrere Intervall Werte: Bei einer sehr hohen Anzahl (z.B. 99999) soll das Programm eine Fehlermeldung geben, da diese trotz der nicht sehr hohen Komplexität nicht weiterverarbeiten kann
+* 4. Fall: Mehrere Intervall Werte: Bei einer sehr hohen Anzahl (z.B. 99999) soll das Programm eine Fehlermeldung geben, da diese trotz der nicht sehr hohen Komplexität nicht weiterverarbeiten kann. Hier soll ein Fehlermeldung kommen, mit dem Hinweis, dass die Anzahl der Intervalle in der Liste sehr groß ist. Somit soll eine Stackoverflow Exception vermieden werden.
 *
 # Wichtige Infos (Speicherverbrauch und Laufzeitkomplexität)
 * Laufzeit: Da hier die Sortieralgorithmus Quicksort benutzt wird ist die Laufzeitkomplexität O(n log n) bzw. O(n²) und für eine zusätzliche Schleife für die Ermittlung der Überlappung der Intevalle kommt O(n) hinzu. (Hier wurden die Ein- und Ausgaben der Intervalle nicht berücksichtigt.) Für die im CodingTask erwähnte Beispiel braucht das Programm durchschnittlich 124.6 Mikrosekunden.
