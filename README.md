@@ -45,6 +45,6 @@ Hier werden Testfälle definiert, um die Korrektheit und Zuverlässigkeit der Fu
 * 4. Fall: Mehrere Intervall Werte: Bei einer sehr hohen Anzahl (z.B. 99999) soll das Programm eine Fehlermeldung geben, da diese trotz der nicht sehr hohen Komplexität nicht weiterverarbeiten kann
 *
 # Wichtige Infos (Speicherverbrauch und Laufzeitkomplexität)
-* Laufzeit: Da hier die Sortieralgorithmus Quicksort benutzt wird ist die Laufzeitkomplexität O(n log n) bzw. O(n²) und für eine zusätzliche Schleife für die Ermittlung der Überlappung der Intevalle kommt O(n) hinzu. (Hier wurden die Ein- und Ausgaben der Intervalle nicht berücksichtigt.)
-* Speicherverbrauch: ???
+* Laufzeit: Da hier die Sortieralgorithmus Quicksort benutzt wird ist die Laufzeitkomplexität O(n log n) bzw. O(n²) und für eine zusätzliche Schleife für die Ermittlung der Überlappung der Intevalle kommt O(n) hinzu. (Hier wurden die Ein- und Ausgaben der Intervalle nicht berücksichtigt.) Für die im CodingTask erwähnte Beispiel braucht das Programm durchschnittlich 124.6 Mikrosekunden.
+* Speicherverbrauch: Neben die dynamische Liste der Eingabe, wird für den Erstellung der Stack zusätzlich Speicher von O(n) benötigt. Diese werden für die Ausgabe benutzt.
 * Robustheit der Software: Beim kompilieren soll das Programm keine Warnings beinhalten,. Bei falscher Eingabewerte weist das Programm auf eine Fehler hin. Bei sehr viele Eingaben wird das Programm anhand von try und catch Befehle auf eine Fehler hingewiesen, dass sehr viele Intervalleingaben nicht verarbeitet werden können (siehe Testing 4. Fall).
