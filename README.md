@@ -25,6 +25,7 @@ Weitere Infos siehe Kommentare in Code
 
 # Ausführung
 Ausgeführt unter Arch Linux mit Linux Kernel Version 5.11.13. Mit gcc Compiler ausgeführt.
+Unter Windows wird Cygwin und deren Bibliotheken (g++, gcc und make) verwendet.
 
 ### 1.Makefile ausführen
 Um ein ausführbahren Datei zu erstellen:
@@ -35,6 +36,10 @@ make all
 Von Makefile erstellte Datei ausführen:
 ``` 
 ./codetask
+```
+Für Windows Umgebung:
+``` 
+./codetask.exe
 ```
 # Testing
 Hier werden Testfälle definiert, um die Korrektheit und Zuverlässigkeit der Funktion zu testen.
