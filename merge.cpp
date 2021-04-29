@@ -1,7 +1,7 @@
 #include "merge.h"
 #include <exception>
 
-//maximale Anzahl der Intervalle für die Liste
+//maximale Anzahl der Intervalle für die Liste.
 const int stackSize = 10000;
 
 /**

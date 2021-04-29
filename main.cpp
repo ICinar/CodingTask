@@ -2,12 +2,9 @@
 #include "test.h"
 #include "main.h"
 
-
-
-
 //Hauptfunktion
 int main() {
-    /*
+    
     // Liste der Intervalle
     vector<Intervall> input
     {
@@ -30,12 +27,13 @@ int main() {
 
     cout <<endl;
 
+	//Tests:
+	
     test1();
     test2();
     test3();
-     */
     test4();
-
+	
 
 
     return 0;

@@ -1,4 +1,4 @@
-//Testfälle:
+//Headerdatei für Testfälle
 
 
 

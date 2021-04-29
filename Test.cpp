@@ -2,6 +2,8 @@
 #include "test.h"
 #include "main.h"
 
+//Testfälle für Merge Intervall
+
 //Testfall 1 Zwei Intervalle mit den gleichen Startwert
 void test1() {
     vector<Intervall> input
