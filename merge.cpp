@@ -1,16 +1,20 @@
 #include "merge.h"
 #include <exception>
 
+//maximale Anzahl der Intervalle für die Liste
 const int stackSize = 10000;
+
 /**
  * Funktion für die Ermittlung der Merge und Consolenausgabe als Ergebnis
  *
  * @param vect Liste der Intervalle
+ * @return stack gemergte Intervallliste
  */
 vector<Intervall> mergeFunction(vector <Intervall> vect) {
 
+	// Überprüfung ob die Liste zu groß ist, um eine Stackoverflow Exception zu vermeiden.
     if (vect.size() > stackSize) {
-        throw std::runtime_error("Error");
+        throw std::runtime_error("Die Größe der Intervallliste ist sehr groß und kann nicht verarbeitet werden.");
     }
     // 1.Schritt Sortiere alle Startintervalle nach Reihenfolge
     vect = sortieren(vect,0,vect.size()-1);

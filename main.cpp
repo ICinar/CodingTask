@@ -41,6 +41,13 @@ int main() {
     return 0;
 }
 
+
+/**
+ * Methode Überprüft ob der Startwert der Intervalle größer ist als Endwert 
+ *
+ * @param v Intervallliste für die Eingabe
+ * @return true wenn alle Startwerte kleiner sind als Endwerte, false wenn Startwert größer ist als der Endwert
+ */
 bool checkIntervall(vector<Intervall> v) {
     for (int i = 0; i < v.size(); i++)
         if (v[i].anfang > v[i].ende)
