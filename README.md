@@ -24,7 +24,7 @@ Weitere Infos siehe Kommentare in Code
 
 
 # Ausführung
-Ausgeführt unter Arch Linux mit Linux Kernel Version 5.11.13
+Ausgeführt unter Arch Linux mit Linux Kernel Version 5.11.13. Mit gcc Compiler ausgeführt.
 
 ### 1.Makefile ausführen
 Um ein ausführbahren Datei zu erstellen:
