@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -c
-SOURCES =  main.cpp merge.cpp
+SOURCES =  main.cpp merge.cpp Test.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = codetask
 

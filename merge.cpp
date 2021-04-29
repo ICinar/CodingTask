@@ -7,7 +7,7 @@
  *
  * @param vect Liste der Intervalle
  */
-void mergeFunction(vector <Intervall> vect) {
+vector<Intervall> mergeFunction(vector <Intervall> vect) {
 
 
     // 1.Schritt Sortiere alle Startintervalle nach Reihenfolge
@@ -40,6 +40,7 @@ void mergeFunction(vector <Intervall> vect) {
     //4.Ausgabe der gemergten Intervalle
     cout << "Output: ";
     printIntervall(stack);
+    return stack;
 }
 
 /**

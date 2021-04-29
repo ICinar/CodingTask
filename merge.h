@@ -10,7 +10,7 @@ struct Intervall
     int anfang,ende;
 };
 
-void mergeFunction(vector <Intervall> vect);
+vector<Intervall> mergeFunction(vector <Intervall> vect);
 
 int partition(vector<Intervall> &v, int left, int right);
 
